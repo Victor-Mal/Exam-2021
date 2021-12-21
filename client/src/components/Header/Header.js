@@ -39,20 +39,18 @@ class Header extends React.Component {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="http:/www.google.com"
+                <a href="http://www.google.com"
                   style={{ textDecoration: 'none' }}
                 >
                   <span>Messages</span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="http:/www.google.com"
+                <a href="http://www.google.com"
                   style={{ textDecoration: 'none' }}
                 >
                   <span>Affiliate Dashboard</span>
-                </Link>
+                </a>
               </li>
               <li>
                 <span onClick={this.logOut}>Logout</span>
