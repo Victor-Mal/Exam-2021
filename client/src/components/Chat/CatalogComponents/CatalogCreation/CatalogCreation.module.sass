@@ -4,7 +4,7 @@
   border-radius: 8px
   left: 172px
   width: 150px
-  z-index: 500
+  z-index: 501
   color: white
 
   i
@@ -31,7 +31,7 @@
       background-color: #8aca6b
       border-top-right-radius: 8px
       border-top-left-radius: 8px
-      border: 1px solid white
+      border: 1px solid black
       border-bottom: none
       cursor: pointer
       height: 24px
@@ -48,10 +48,13 @@
         border-right: none
 
     .active
-      background-color: #4e618d
       flex: 1.3
       z-index: 600
 
       &:hover
-        color: white
-        background-color: #4e618d
+        color: #4e618d
+
+    .old
+      background-color: #4e618d
+    .new
+      background-color: #8aca6b
