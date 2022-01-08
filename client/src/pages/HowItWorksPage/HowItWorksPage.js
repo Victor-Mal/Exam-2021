@@ -10,8 +10,8 @@ const HowItWorksPage = () => {
   return (
     <div>
       <Header />
-      <div>
-        <div>
+      <div className={styles.container}>
+        <div className={styles.firstBlock}>
           <div>
             <h1>How Does Squadhelp Work?</h1>
             <p>
@@ -20,53 +20,57 @@ const HowItWorksPage = () => {
               and Agency-level validation services.
             </p>
           </div>
-          <img 
-           src={`${CONSTANTS.STATIC_IMAGES_PATH}/svg/app-user.svg`}
-           alt="app user"
+          <img
+            className={styles.appUser}
+            src={`${CONSTANTS.STATIC_IMAGES_PATH}/svg/app-user.svg`}
+            alt="app user"
           />
         </div>
-        <div>
+        <div className={styles.secondBlock}>
+          <div className={styles.deckHeader}>
           <h2>3 Ways To Use Squadhelp</h2>
           <p>
             Squadhelp offers 3 ways to get you a perfect name for your business.
           </p>
-          <div>
-            <div>
+          </div>
+          <div className={styles.cardDeck}>
+            <div className={styles.card}>
               <h3>Launch a Contest</h3>
               <p>
                 Work with hundreds of creative experts to get custom name
                 suggestions for your business or brand. All names are
                 auto-checked for URL availability.
               </p>
-              <a href="http://www.google.com">Launch a Contest</a>
+              <a className={styles.cardLink} href="http://www.google.com">Launch a Contest</a>
             </div>
-            <div>
+            <div className={styles.card}>
               <h3>Explore Names For Sale</h3>
               <p>
                 Our branding team has curated thousands of pre-made names that
                 you can purchase instantly. All names include a matching URL and
                 a complimentary Logo Design
               </p>
-              <a href="http://www.google.com">Explore Names For Sale</a>
+              <a className={styles.cardLink} href="http://www.google.com">Explore Names For Sale</a>
             </div>
-            <div>
+            <div className={styles.card}>
               <h3>Agency-level Managed Contests</h3>
               <p>
                 Our Managed contests combine the power of crowdsourcing with the
                 rich experience of our branding consultants. Get a complete
                 agency-level experience at a fraction of Agency costs
               </p>
-              <a href="http://www.google.com">Launch a Contest</a>
+              <a className={styles.cardLink} href="http://www.google.com">Launch a Contest</a>
             </div>
           </div>
         </div>
-        <div>
-          <h2>How Do Naming Contests Work?</h2>
-          <div>
-          <img 
-           src={`${CONSTANTS.STATIC_IMAGES_PATH}/svg/house-agency.svg`}
-           alt="house-agency"
-          />
+        <div className={styles.thirdBlock}>
+          <h2 className={styles.instructionsHeader}>How Do Naming Contests Work?</h2>
+          <div className={styles.contestsInstruction}>
+            <img
+              className={styles.houseAgency}
+              src={`${CONSTANTS.STATIC_IMAGES_PATH}/svg/house-agency.svg`}
+              alt="house-agency"
+            />
             <ul>
               <li>
                 <span>1</span>
