@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import LoginPage from './pages/LoginPage/LoginPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
+import HowItWorksPage from './pages/HowItWorksPage/HowItWorksPage';
 import Payment from './pages/Payment/Payment';
 import StartContestPage from './pages/StartContestPage/StartContestPage';
 import Dashboard from './pages/Dashboard/Dashboard';
@@ -50,6 +51,7 @@ function App(props) {
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/registration" component={RegistrationPage} />
+        <Route exact path="/how-it-works" component={HowItWorksPage} />
         <PrivateRoute
           exact
           path="/payment"
