@@ -22,7 +22,8 @@
     display: flex
     flex-direction: column
     align-items: center
-    width: 1140px
+    max-width: 1140px
+    min-width: 260px
     margin: auto
 
 @mixin sideImg
@@ -34,28 +35,46 @@
     @include sideImg
     margin: 64px
 
+    .header
+        padding-right: 30px
+        @media (max-width: 1000px)
+            padding: 0 10px
+            text-align: center
+
     .appUser
         height: 390px
         width: 450px
+        @media (max-width: 1000px)
+            display: none
 
 .secondBlock
     width: 100%
     text-align: center
     margin: 64px
+    @media (max-width: 1200px)
+        margin-bottom: 20px
 
     .deckHeader
         margin-bottom: 64px
+        max-width: 90%
+        margin: auto
 
     .cardDeck
         display: flex
         justify-content: space-between
         text-align: center
+        @media (max-width: 580px)
+            flex-direction: column
 
         .card
             border: 1px solid #e7eaf3
             border-radius: 5px
             width: 316px
             padding: 64px 16px
+            margin: 20px 10px
+            @media (max-width: 580px)
+                width: auto
+                margin: 20px 10px
 
             .cardImg
                 width: 72px
@@ -94,16 +113,19 @@
         .houseAgency
             width: 492px
             height: 563px
+            @media (max-width: 1000px)
+                display: none
 
         li
-            width: 500px
+            width: 480px
             border: 1px solid #e7eaf3
             border-radius: 5px
             padding: 32px
-            margin: 16px 0 40px
+            margin: 16px 10px 40px
             display: flex
             align-items: center
-            
+            @media (max-width: 1000px)
+                width: auto
 
             span
                 font-weight: 500
