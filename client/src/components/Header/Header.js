@@ -152,7 +152,7 @@ class Header extends React.Component {
                   <ul>
                     <li>
                       <Link to="/how-it-works" style={{ textDecoration: 'none' }}>
-                        <span>HOW IT WORKS</span>
+                        HOW IT WORKS
                       </Link>
                     </li>
                     <li>

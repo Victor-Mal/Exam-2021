@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import CONSTANTS from '../../constants';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';

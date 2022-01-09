@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.sass';
 import CONSTANTS from '../../constants';
 
@@ -6,7 +7,10 @@ class Footer extends Component {
     topFooterItemsRender = (item) => (
       <div key={item.title}>
         <h4>{item.title}</h4>
-        {item.items.map((i) => <a key={i} href="https://google.com">{i}</a>)}
+        {item.items.map((i) => (i === "How It Works?" || i === "How It Works") 
+        ? 
+        (<Link key={i} to="/how-it-works">{i}</Link>) : (<a key={i} href="https://google.com">{i}</a>))}
+        
       </div>
     );
 
