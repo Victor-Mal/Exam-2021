@@ -12,6 +12,7 @@ import Home from './pages/Home/Home';
 import ContestPage from './pages/ContestPage/ContestPage';
 import UserProfile from './pages/UserProfile/UserProfile';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
+import EventsPage from './pages/EventsPage/EventsPage';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
 import PrivateRoute from './components/Routes/PrivateRoute';
@@ -109,6 +110,12 @@ function App(props) {
           path="/account"
           roles={[CONSTANTS.CUSTOMER, CONSTANTS.CREATOR]}
           component={UserProfile}
+        />
+        <PrivateRoute
+          exact
+          path="/eventsPage"
+          roles={[CONSTANTS.CUSTOMER, CONSTANTS.CREATOR]}
+          component={EventsPage}
         />
         <Route component={NotFound} />
       </Switch>
