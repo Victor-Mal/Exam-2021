@@ -13,6 +13,7 @@ import ContestPage from './pages/ContestPage/ContestPage';
 import UserProfile from './pages/UserProfile/UserProfile';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import EventsPage from './pages/EventsPage/EventsPage';
+import EventNotification from './components/EventsComponents/EventNotification';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
 import PrivateRoute from './components/Routes/PrivateRoute';
@@ -120,6 +121,7 @@ function App(props) {
         <Route component={NotFound} />
       </Switch>
       <ChatContainer />
+      <EventNotification />
     </Router>
   );
 }
