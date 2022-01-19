@@ -4,7 +4,7 @@ import moment from 'moment';
 import styles from './Events.module.sass';
 
 const classNames = require('classnames');
-const { localStorageHandler } = require('./LocalStorageHandler');
+const { localStorageHandler } = require('./LocalStorageEventHandlers');
 
 const EventNotification = () => {
   const [stoppedTimers, setStoppedTimers] = useState(0);
