@@ -1,0 +1,87 @@
+
+.events
+    text-align: center
+    .createEvent
+        background-color: #4bf
+        width: 600px;
+        margin: auto;
+        border: 1px solid transparent;
+        padding: 20px;
+        border-radius: 35px;
+        
+        label
+            display: flex
+            align-items: center
+            margin: 15px 0
+        span
+            font-size: 24px
+        input
+            height: 30px
+            font-size: 18px
+
+        .descriptionInp
+            flex-grow: 1 
+        .dateTime
+            display: flex
+            justify-content: space-between
+            .dateInp
+                width: 213px
+            .timeInp
+                width: 111px
+        .btn
+            display: block
+            margin: auto;
+            width: 300px
+            height: 60px
+            border: 2px solid black
+            border-radius: 20px
+            font-size: 24px
+            &:hover
+                opacity: 0.7
+    .eventList
+        margin-top: 80px
+    h2
+        font-size: 2rem
+        margin-bottom: 8px
+        line-height: 48px
+        .hide
+            display: none
+        .show
+            display: block
+    li
+        display: flex
+        width: 640px
+        margin: 20px auto
+        .eventInfo
+            width: 100%
+            border: 1px solid black
+            border-radius: 5px
+            padding: 15px
+            display: flex
+            justify-content: space-between
+            font-size: 20px
+            font-weight: 500
+        .delete
+            display: none
+        &:hover
+            .delete
+                background-color: #c24
+                border: 1px solid transparent
+                border-radius: 5px 
+                display: block
+
+.eventNotification
+    position: fixed
+    top: 30%
+    right: 0
+    padding: 15px 25px
+    color: white
+    background-color: #c24
+    border-radius: 10px 0 0 10px
+    cursor: pointer
+    text-decoration: none
+
+.hide
+    display: none
+.show
+    display: block
