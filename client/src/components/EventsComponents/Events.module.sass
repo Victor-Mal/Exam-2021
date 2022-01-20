@@ -1,6 +1,7 @@
 
 .events
     text-align: center
+    min-width: 260px
     .createEvent
         background-color: #4bf
         width: 600px;
@@ -8,11 +9,16 @@
         border: 1px solid transparent;
         padding: 20px;
         border-radius: 35px;
+        @media (max-width: 580px)
+            width: auto
+            margin: auto 10px
         
         label
             display: flex
             align-items: center
             margin: 15px 0
+            @media (max-width: 580px)
+                flex-direction: column
         span
             font-size: 24px
         input
@@ -24,10 +30,12 @@
         .dateTime
             display: flex
             justify-content: space-between
+            @media (max-width: 580px)
+                flex-direction: column
             .dateInp
-                width: 213px
+                width: 215px
             .timeInp
-                width: 111px
+                width: 113px
         .btn
             display: block
             margin: auto;
@@ -36,6 +44,8 @@
             border: 2px solid black
             border-radius: 20px
             font-size: 24px
+            @media (max-width: 580px)
+                width: 70%
             &:hover
                 opacity: 0.7
     .eventList
@@ -52,6 +62,9 @@
         display: flex
         width: 640px
         margin: 20px auto
+        @media (max-width: 580px)
+            width: auto
+            margin: 20px 10px
         .eventInfo
             width: 100%
             border: 1px solid black
@@ -61,6 +74,8 @@
             justify-content: space-between
             font-size: 20px
             font-weight: 500
+            @media (max-width: 580px)
+                flex-direction: column
         .delete
             display: none
         &:hover
